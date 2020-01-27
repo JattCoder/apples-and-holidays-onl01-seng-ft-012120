@@ -85,7 +85,7 @@ def all_supplies_in_holidays(holiday_hash)
       count = 0
       while count < modified.length
         holiday = modified[count].capitalize
-        checking += "#{holiday} "
+        checking += "#{holiday}"
         count += 1
       end
       puts "  #{checking}: #{supplylist.join(", ")}"
