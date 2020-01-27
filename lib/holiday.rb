@@ -58,7 +58,11 @@ def all_winter_holiday_supplies(holiday_hash)
   holiday_hash.each do |season,holidays|
     if season == :winter
       holidays.each do|holiday,listofsupply|
-        arrayofsupplies << listofsupply
+        count = 0
+        while count < listofsupply.length
+          arrayofsupplies << listofsupply[count]
+          count += 1
+        end
       end
     end
   end
