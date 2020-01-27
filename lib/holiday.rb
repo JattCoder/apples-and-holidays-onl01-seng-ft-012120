@@ -85,8 +85,7 @@ def all_supplies_in_holidays(holiday_hash)
       count = 0
       while count < modified.length
         holiday = modified[count].capitalize
-        checking += "#{holiday} " if count < (modified.length - 1)
-        checking += "#{holiday}" if count == (modified.length - 1)
+        checking += "#{holiday} "
         count += 1
       end
       checking +=
