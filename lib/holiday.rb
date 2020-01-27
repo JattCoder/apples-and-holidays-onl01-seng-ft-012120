@@ -82,7 +82,7 @@ def all_supplies_in_holidays(holiday_hash)
     holidays.each do |holiday,supplylist|
       count = 0
       while count < supplylist.length
-        puts "  #{holiday.capitalize.humanize.upcase}: #{supplylist.join(', ')}"
+        puts "  #{holiday.split("_").join(" ").capitalize}: #{supplylist.join(', ')}"
         count += 1
       end
     end
