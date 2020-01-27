@@ -88,7 +88,7 @@ def all_supplies_in_holidays(holiday_hash)
         checking += "#{holiday} "
         count += 1
       end
-      puts "#{checking}: #{supplylist.join(", ")}"
+      puts "  #{checking}: #{supplylist.join(", ")}"
     end
   end
 end
