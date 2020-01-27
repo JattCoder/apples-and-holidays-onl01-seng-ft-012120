@@ -77,20 +77,16 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  string = ""
   holiday_hash.each do |season,holidays|
-    string +=
-    "
-    #{season.capitalize}:
-    "
-    holidays.each do |holiday,supply|
-      string +=
-    "
-      #{holiday.capitalize}: #{supply.join(",").capitalize!}
-    "
+    puts season
+    holidays.each do |holiday,supplylist|
+      count = 0
+      while count < supplylist.length
+        puts "#{holiday}: #{supplylist[count]}"
+        count += 1
+      end
     end
   end
-  return string
 end
 
 def all_holidays_with_bbq(holiday_hash)
