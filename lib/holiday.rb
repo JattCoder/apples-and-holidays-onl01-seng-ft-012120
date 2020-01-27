@@ -57,12 +57,7 @@ def all_winter_holiday_supplies(holiday_hash)
   arrayofsupplies = []
   holiday_hash.each do |season,holiday|
     if season == :winter
-      if holiday.include?("Lights")
-        arrayofsupplies << holiday.values
-      else
-        holiday.push("Lights")
-        arrayofsupplies << holiday.values
-      end
+      arrayofsupplies << holiday.values
     end
   end
   puts arrayofsupplies
